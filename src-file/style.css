@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(48, 45, 45);
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(48, 45, 45);
+
+}
+
+.btns {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.btns img {
+    width: 30%;
+    max-width: 30px;
+    user-select: none;
+
+}
+
+#btnRow1 {
+    display: flex;
+    justify-content: center;
+}
+
+#btnRow2 {
+    margin-top: 1vh;
+    gap: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+
+#upKey {
+    width: 100px;
+    background-color: rgb(42, 38, 38);
+    border-left: 0.1vh solid #000000;
+    border-top: 0.1vh solid #000000;
+}
+
+#leftKey {
+    width: 100px;
+    background-color: rgb(42, 38, 38);
+    border-left: 0.1vh solid #000000;
+    border-top: 0.1vh solid #000000;
+}
+
+#rightKey {
+    width: 100px;
+    background-color: rgb(42, 38, 38);
+    border-left: 0.1vh solid #000000;
+    border-top: 0.1vh solid #000000;
+}
+
+#downKey {
+    width: 100px;
+    background-color: rgb(42, 38, 38);
+    border-left: 0.1vh solid #000000;
+    border-top: 0.1vh solid #000000;
+}
+
+#leftKey:active,#upKey:active,#rightKey:active,#downKey:active{
+    background-color: rgb(35, 34, 34);
+}
+
+
+#board {
+
+    margin: auto;
+    background-color: rgb(57, 68, 65);
+    border-top: 0.8vh solid rgb(49, 57, 55);
+    border-top: 0.8vh solid rgb(255, 255, 165);
+    width: 70vmin;
+    height: 62vmin;
+    display: grid;
+    gap: 2px;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+
+}
+
+.snakeHead {
+    background-color: rgb(255, 255, 165);
+    z-index: 12;
+
+}
+
+.snakeBody {
+    background-color: rgb(237, 237, 146);
+    z-index: 9;
+
+}
+
+.snakeFood {
+    /* background-color: rgb(173, 173, 120); */
+    background-color: rgb(212, 212, 138);
+
+    border-radius: 50%;
+    z-index: 10;
+
+}
+
+#outerBorderOfBoard {
+    margin: auto;
+    width: 70vmin;
+    height: 72vmin;
+    background-color: rgb(57, 68, 65);
+    border-left: 0.8vh solid rgb(33, 38, 36);
+    border-right: 0.8vh solid rgb(47, 56, 53);
+    border-top: 0.8vh solid rgb(33, 38, 36);
+    border-bottom: 0.8vh solid rgb(47, 56, 53);
+}
+
+
+#scoreBox {
+    height: 9vmin;
+}
+
+#score {
+    font-size: 3.5vmin;
+    font-weight: bolder;
+    color: rgb(255, 255, 165);
+    margin-left: 10px;
+}
+
+#highScore {
+    font-size: 3.5vmin;
+    font-weight: bolder;
+    color: rgb(255, 255, 165);
+    margin-left: 10px;
+}
